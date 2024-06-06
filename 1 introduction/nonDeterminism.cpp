@@ -1,3 +1,5 @@
+//shows non deterministic nature of output when 2 threads are printing "yes" and "no"
+
 #include <iostream>
 #include <pthread.h>
 
@@ -6,7 +8,7 @@ using namespace std;
 void* printMessage(void* arg){
   const char* msg = (char*) arg;
   cout<<msg<<endl;
-  return nullptr;
+  return NULL;
 }
 
 int main(){
@@ -24,7 +26,6 @@ int main(){
   pthread_join(t1,NULL);
   pthread_join(t2,NULL);
 
-  
-
+  return 0;
 }
 
