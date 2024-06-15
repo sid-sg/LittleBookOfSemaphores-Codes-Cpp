@@ -1,4 +1,18 @@
 /*
+ Imagine that you and Bob operate a nuclear reactor that you
+ monitor from remote stations. Most of the time, both of you are watching for
+ warning lights, but you are both allowed to take a break for lunch. It doesn’t
+ matter who eats lunch first, but it is very important that you don’t eat lunch
+ at the same time, leaving the reactor unwatched!
+ Puzzle: Figure out a system of message passing (phone calls) that enforces
+ these restraints. Assume there are no clocks, and you cannot predict when lunch
+ will start or how long it will last. What is the minimum number of messages
+ that is required?
+
+*/
+
+
+/*
 Thread 1
     call Thread 2 and request for permission
     wait for permission
